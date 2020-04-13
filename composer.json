@@ -1,0 +1,28 @@
+{
+    "name": "paulvl/ssh",
+    "description": "A package to execute commands over an SSH connection using phpseclib",
+    "keywords": ["package", "library", "ssh", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Vidal",
+            "email": "paul@tecactus.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.1",
+        "phpseclib/phpseclib": "~2.0",
+        "ramsey/uuid": "^3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SSH\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
